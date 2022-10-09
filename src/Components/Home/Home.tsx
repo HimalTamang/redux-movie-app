@@ -13,6 +13,7 @@ const Home = () => {
   useEffect(() => {
     // apicall
     const MovieText = "Harry";
+
     const MovieApiFetch = async () => {
       const res: any = await MovieApi.get(
         `?apikey=${APIKey}&s=${MovieText}&type=movie`
