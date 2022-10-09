@@ -5,7 +5,7 @@ import MovieCard from "../Cards/MovieCard";
 
 const MovieListing = () => {
   const allMovies = useSelector(getAllMovies);
-  console.log(allMovies);
+  // console.log(allMovies);
 
   let renderedMovie =
     allMovies.Response === "True"
@@ -13,7 +13,7 @@ const MovieListing = () => {
           // console.log(index);
           return <MovieCard key={index} data={movie} />;
         })
-      : "Error redering movie";
+      : "Error in redering movie";
   return (
     <div className="movieWrapper font-sans px-6 bg-[#151b20] text-[#e9f6ff]">
       <div className="movieListing">

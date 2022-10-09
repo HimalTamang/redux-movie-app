@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieCard = (props: any) => {
   const { data } = props;
-  console.log(data);
+  // console.log(data);
   return (
     <div className="MovieCardWrapper font-sans bg-[#1e272e] rounded overflow-hidden cursor-pointer mx-1 my-2 transform transition duration-500 hover:scale-95 shadow-md hover:shadow-lg">
       <div className="card-inner">
