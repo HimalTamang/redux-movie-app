@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import { fetchAsyncMovies } from "../../ReducerFeatute/Reducer/MovieSlice";
+import {
+  fetchAsyncMovies,
+  fetchAsyncSeries,
+} from "../../ReducerFeatute/Reducer/MovieSlice";
 import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import MovieListing from "../MovieListing/MovieListing";
 
@@ -10,6 +13,7 @@ const Home = () => {
   // useEffect
   useEffect(() => {
     dispatch(fetchAsyncMovies());
+    dispatch(fetchAsyncSeries());
   }, [dispatch]);
 
   // Home return statement
