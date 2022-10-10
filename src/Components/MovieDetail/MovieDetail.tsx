@@ -25,12 +25,12 @@ const MovieDetail = () => {
   }, [dispatch, imdbID]);
 
   return (
-    <div className="detailWrapper">
+    <div className="detailWrapper h-[100vh] ">
       {Object.keys(detail).length === 0 ? (
         "Loading..."
       ) : (
-        <div>
-          <div className="left">
+        <div className="flex">
+          <div className="left w-[60%]">
             <h2>
               <span className="font-semibold">Name: </span> {detail.Title}
             </h2>
