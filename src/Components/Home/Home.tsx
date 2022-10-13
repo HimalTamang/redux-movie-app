@@ -12,13 +12,13 @@ const Home = () => {
 
   // useEffect
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncSeries());
+    dispatch(fetchAsyncMovies("Harry"));
+    dispatch(fetchAsyncSeries("Mission"));
   }, [dispatch]);
 
   // Home return statement
   return (
-    <div>
+    <div className="w-[100vw]">
       <MovieListing />
     </div>
   );

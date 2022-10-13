@@ -5,10 +5,9 @@ import { APIKey } from "../../Common/Apis/ApiKey";
 // async thunk middleware use for fetching movie api and dispatching an actions
 export const fetchAsyncMovies: any = createAsyncThunk(
   "omdb/fetchAsyncMovies",
-  async () => {
-    const MovieText = "Harry";
+  async (searchData) => {
     const res: any = await MovieApi.get(
-      `?apikey=${APIKey}&s=${MovieText}&type=movie`
+      `?apikey=${APIKey}&s=${searchData}&type=movie`
     );
     // console.log(res.data);
     return res.data;
@@ -18,10 +17,9 @@ export const fetchAsyncMovies: any = createAsyncThunk(
 // async thunk middleware use for fetching series api and dispatching an actions
 export const fetchAsyncSeries: any = createAsyncThunk(
   "omdb/fetchAsyncSeries",
-  async () => {
-    const MovieText = "Friends";
+  async (searchData) => {
     const res: any = await MovieApi.get(
-      `?apikey=${APIKey}&s=${MovieText}&type=series`
+      `?apikey=${APIKey}&s=${searchData}&type=series`
     );
     // console.log(res.data);
     return res.data;

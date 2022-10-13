@@ -25,12 +25,13 @@ const MovieDetail = () => {
   }, [dispatch, imdbID]);
 
   return (
-    <div className="detailWrapper h-[100vh] ">
+    <div className="detailWrapper h-fit sm:[100vh] ">
       {Object.keys(detail).length === 0 ? (
         "Loading..."
       ) : (
-        <div className="flex">
-          <div className="left w-[60%]">
+        <div className="flex flex-col sm:flex-row py-1 px-4 sm:py-4 text-sans">
+          <div className="left w-[100%] sm:w-[60%] order-2 sm:order-1 text-sm xl:text-lg space-y-2">
+            <h1 className="font-bold text-lg">Details:</h1>
             <h2>
               <span className="font-semibold">Name: </span> {detail.Title}
             </h2>
@@ -67,12 +68,20 @@ const MovieDetail = () => {
               {detail.Director}
             </p>
             <p>
-              <span className="font-semibold">Description: </span>
+              <span className="font-semibold">Box Office: </span>
+              {detail.BoxOffice}
+            </p>
+            <p>
+              <span className="font-semibold text-justify">Description: </span>
               {detail.Plot}
             </p>
           </div>
-          <div className="right">
-            <img src={detail.Poster} alt={detail.Title} />
+          <div className="right w-[100%] sm:w-[40%] order-1 sm:order-2">
+            <img
+              src={detail.Poster}
+              alt={detail.Title}
+              className="transform transition duration-500 hover:scale-105"
+            />
           </div>
         </div>
       )}
