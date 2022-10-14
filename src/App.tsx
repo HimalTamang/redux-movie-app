@@ -11,15 +11,17 @@ import PageNotFound from "./Components/404Error/PageNotFound";
 function App() {
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/movie/:imdbID" element={<MovieDetail />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <div className="bg-[#151b20] border border-red-200 h-screen">
+        <Router>
+          <Header />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/movie/:imdbID" element={<MovieDetail />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
     </>
   );
 }

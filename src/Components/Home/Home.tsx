@@ -18,7 +18,7 @@ const Home = () => {
 
   // Home return statement
   return (
-    <div className="w-[100vw]">
+    <div>
       <MovieListing />
     </div>
   );

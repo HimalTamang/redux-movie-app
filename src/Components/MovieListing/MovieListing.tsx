@@ -41,7 +41,7 @@ const MovieListing = () => {
     <div className="movieWrapper  font-sans px-6 bg-[#151b20] text-[#e9f6ff]">
       <div className="movieListing  mx-auto max-w-screen-2xl ">
         <h2 className="text-xl font-semibold py-4">Lists of Movie : </h2>
-        <div className="movieContainer h-fit grid grid-cols-2 sm:grid-cols-5 md:grid-cols-6 2xl:grid-cols-8 overflow-hidden">
+        <div className="movieContainer  grid grid-cols-2 sm:grid-cols-5 md:grid-cols-6 2xl:grid-cols-8 overflow-hidden">
           {renderedMovie}
         </div>
         <div className="seriesListing">

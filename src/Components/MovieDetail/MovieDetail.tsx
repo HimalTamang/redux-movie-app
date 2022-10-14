@@ -29,7 +29,7 @@ const MovieDetail = () => {
       {Object.keys(detail).length === 0 ? (
         "Loading..."
       ) : (
-        <div className="flex flex-col sm:flex-row py-1 px-4 sm:py-4 text-sans">
+        <div className="flex flex-col h-fit sm:flex-row py-1 px-4 sm:py-4 text-sans">
           <div className="left w-[100%] sm:w-[60%] order-2 sm:order-1 text-sm xl:text-lg space-y-2">
             <h1 className="font-bold text-lg">Details:</h1>
             <h2>
