@@ -11,7 +11,7 @@ import PageNotFound from "./Components/404Error/PageNotFound";
 function App() {
   return (
     <>
-      <div className="bg-[#151b20] border border-red-200 h-screen">
+      <div className="bg-[#151b20] ">
         <Router>
           <Header />
           <Routes>

@@ -25,7 +25,7 @@ const MovieDetail = () => {
   }, [dispatch, imdbID]);
 
   return (
-    <div className="detailWrapper h-fit sm:[100vh] ">
+    <div className="detailWrapper h-fit sm:[100vh] text-[#fff] ">
       {Object.keys(detail).length === 0 ? (
         "Loading..."
       ) : (
