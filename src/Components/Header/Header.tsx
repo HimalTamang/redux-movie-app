@@ -19,7 +19,7 @@ const Header = () => {
     <div className="navWrapper  px-6 h-[80px] w-full  text-2xl flex items-center  bg-[#1e272e] text-[#fff]">
       <nav className="w-full max-w-screen-xl mx-auto">
         <header className="  h-[50px] flex justify-between items-center ">
-          <a href="/">Movie Clone App</a>
+          <a href="/">Movie Clone </a>
           <div className="border">
             <form
               onSubmit={handleOnSubmit}
